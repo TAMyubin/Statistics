@@ -9,8 +9,8 @@ public class ListController : MonoBehaviour {
     public Transform CreatePos;
     public Text money;
 
-    public int _nowmoney;
-    public int _temp = 0;
+    public float _nowmoney;
+    public float _temp = 0;
     public Button SaveBtn;
     private DetailController child;
 
@@ -30,6 +30,7 @@ public class ListController : MonoBehaviour {
             child = obj.GetComponent<DetailController> ();
             child.init (this, i);
             list.Add (obj);
+          
         }
     }
     public void RecoverEmptyBox () {

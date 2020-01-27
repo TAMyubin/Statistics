@@ -30,12 +30,12 @@ public class PrefabController : MonoBehaviour, IPointerDownHandler {
 
     public void change () {
 
-        if (inputText.text == "" || inputText.text == null) {
-            _controller.controller._temp = 0;
-        } else {
-            _controller.controller._temp = int.Parse (inputText.text);
-        }
-        _controller.ResidueText.text = (_controller.controller._nowmoney - _controller.controller._temp).ToString ();
+        // if (inputText.text == "" || inputText.text == null) {
+        //     _controller.controller._temp = 0;
+        // } else {
+        //     _controller.controller._temp = int.Parse (inputText.text);
+        // }
+        // _controller.ResidueText.text = (_controller.controller._nowmoney - _controller.controller._temp).ToString ();
 
     }
     public void end () {
@@ -43,7 +43,7 @@ public class PrefabController : MonoBehaviour, IPointerDownHandler {
         if (inputText.text == "" || inputText.text == null) {
             _controller.controller._temp = 0;
         } else {
-            _controller.controller._temp = int.Parse (inputText.text);
+            _controller.controller._temp = float.Parse (inputText.text);
         }
         _controller.controller._nowmoney = _controller.controller._nowmoney - _controller.controller._temp;
         _controller.ResidueText.text = _controller.controller._nowmoney.ToString ();

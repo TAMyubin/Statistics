@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 public class Storage {
-    public int money;
+    public float money;
     public Dictionary<int, List<kind>> dataDic;
 }
 
@@ -73,7 +73,7 @@ public class StorageManager {
             // }
         } else {
             _storage = new Storage ();
-            _storage.money = 100;
+            _storage.money = 0;
             _storage.dataDic = new Dictionary<int, List<kind>> ();
 
     

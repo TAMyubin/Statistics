@@ -5,9 +5,9 @@ using System;
 
 public struct kind {
     public DateTime time;//时间
-    public int rental; //总额
-    public int IAE; //收支
-    public int residue; //剩余
+    public float rental; //总额
+    public float IAE; //收支
+    public float residue; //剩余
     public string remark; //备注
 }
 public class StatisticsManager {
@@ -21,8 +21,8 @@ public class StatisticsManager {
             return _instance;
         }
     }
-    private int _money;
-    public int money {
+    private float _money;
+    public float money {
         get { return _money; }
         set { _money = value; }
     }
